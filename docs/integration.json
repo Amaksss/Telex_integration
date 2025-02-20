@@ -1,0 +1,17 @@
+{
+  "name": "StackOverflow Fetcher",
+  "type": "interval",
+  "description": "Fetches recent StackOverflow questions and sends them to Telex.",
+  "version": "1.0.0",
+  "interval": 60000,
+  "settings": {
+    "webhook_url": "https://ping.telex.im/v1/webhooks/01952380-e2c6-7921-89ea-aa6d1d6ee1b5",
+    "message": "💡 Fetched new StackOverflow questions!",
+    "status": "success",
+    "event_name": "stackoverflow_fetch",
+    "username": "StackOverflow Bot"
+  }
+}
+
+
+  

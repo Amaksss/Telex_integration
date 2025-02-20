@@ -1,6 +1,7 @@
 import express from 'express';
 import axios from 'axios';
-import integrationRouter from '../docs/integration';
+//import integrationRouter from '../docs/integration';
+
 //import tickRouter from './routes/tick';
 import { fetchStackOverflowQuestions } from './services/stackoverflow';
 
@@ -12,7 +13,7 @@ const port = 3000;
 app.use(express.json());
 
 // Routes
-app.use('/', integrationRouter);
+//app.use('/', integrationRouter);
 //app.use('/', tickRouter);
 
 
