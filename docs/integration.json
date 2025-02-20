@@ -1,29 +1,21 @@
 {
-  "data": {
-    "descriptions": {
-      "app_name": "StackOverflow Fetcher",
-      "app_description": "Fetches recent StackOverflow questions",
-      "app_url": "http://localhost:3000",
-      "app_logo": "https://i.imgur.com/lZqvffp.png",
-      "background_color": "#f48024"
-    },
-    "integration_type": "interval",
-    "settings": [
-      {
-        "label": "tag",
-        "type": "text",
-        "required": true,
-        "default": "javascript"
-      },
-      {
-        "label": "interval",
-        "type": "text",
-        "required": true,
-        "default": "* * * * *"
-      }
-    ],
-    "tick_url": "http://localhost:3000/tick"
-  }
+  "name": "StackOverflow Fetcher",
+  "type": "interval",
+  "description": "Fetches recent StackOverflow questions",
+  "version": "1.0.0",
+  "app_url": "http://localhost:3000",
+  "app_logo": "https://i.imgur.com/lZqvffp.png",
+  "background_color": "#f48024",
+  "key_features": [
+    "Fetches the latest StackOverflow questions",
+    "Supports tag-based filtering",
+    "Sends questions to Telex every minute"
+  ],
+  "settings": [
+    { "label": "tag", "type": "text", "required": true, "default": "javascript" },
+    { "label": "interval", "type": "text", "required": true, "default": "* * * * *" }
+  ],
+  "tick_url": "http://localhost:3000/tick"
 }
 
 
