@@ -1,15 +1,28 @@
 {
-  "name": "StackOverflow Fetcher",
-  "type": "interval",
-  "description": "Fetches recent StackOverflow questions and sends them to Telex.",
-  "version": "1.0.0",
-  "interval": 60000,
-  "settings": {
-    "webhook_url": "https://ping.telex.im/v1/webhooks/01952380-e2c6-7921-89ea-aa6d1d6ee1b5",
-    "message": "💡 Fetched new StackOverflow questions!",
-    "status": "success",
-    "event_name": "stackoverflow_fetch",
-    "username": "StackOverflow Bot"
+  "data": {
+    "descriptions": {
+      "app_name": "StackOverflow Fetcher",
+      "app_description": "Fetches recent StackOverflow questions",
+      "app_url": "http://localhost:3000",
+      "app_logo": "https://i.imgur.com/lZqvffp.png",
+      "background_color": "#f48024"
+    },
+    "integration_type": "interval",
+    "settings": [
+      {
+        "label": "tag",
+        "type": "text",
+        "required": true,
+        "default": "javascript"
+      },
+      {
+        "label": "interval",
+        "type": "text",
+        "required": true,
+        "default": "* * * * *"
+      }
+    ],
+    "tick_url": "http://localhost:3000/tick"
   }
 }
 
