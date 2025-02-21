@@ -1,22 +1,74 @@
 {
-  "name": "StackOverflow Fetcher",
-  "type": "interval",
-  "description": "Fetches recent StackOverflow questions",
-  "version": "1.0.0",
-  "app_url": "http://localhost:3000",
-  "app_logo": "https://i.imgur.com/lZqvffp.png",
-  "background_color": "#f48024",
-  "key_features": [
-    "Fetches the latest StackOverflow questions",
-    "Supports tag-based filtering",
-    "Sends questions to Telex every minute"
-  ],
-  "settings": [
-    { "label": "tag", "type": "text", "required": true, "default": "javascript" },
-    { "label": "interval", "type": "text", "required": true, "default": "* * * * *" }
-  ],
-  "tick_url": "http://localhost:3000/tick"
+  "data": {
+    "date": {
+      "created_at": "2025-02-19",
+      "updated_at": "2025-02-19"
+    },
+    "descriptions": {
+      "app_name": "StackOverflow Fetcher",
+      "app_description": "Fetches recent StackOverflow questions based on specific tags and sends them to Telex.",
+      "app_url": "https://amaksss.github.io/Telex_integration/", 
+      "app_logo": "https://i.imgur.com/lZqvffp.png",
+      "background_color": "#f48024"
+    },
+    "integration_category": "Developer Tools",
+    "integration_type": "interval",
+    "is_active": true,
+    "tick_url": "https://ping.telex.im/v1/return/01952380-e2c6-7921-89ea-aa6d1d6ee1b5", 
+    "target_url": "https://www.postb.in/1724516582457-0098453621723"
+,
+    "key_features": [
+      "Fetches the latest StackOverflow questions",
+      "Supports tag-based filtering",
+      "Sends top 3 questions to Telex at regular intervals"
+    ],
+    "permissions": {
+      "stackoverflow_bot": {
+        "always_online": true,
+        "display_name": "StackOverflow Bot"
+      }
+    },
+    "settings": [
+      {
+        "label": "Tag",
+        "type": "text",
+        "required": true,
+        "default": "javascript"
+      },
+      {
+        "label": "Interval (ms)",
+        "type": "number",
+        "required": true,
+        "default": 60000
+      },
+      {
+        "label": "Message",
+        "type": "text",
+        "required": true,
+        "default": "💡 Fetched new StackOverflow questions!"
+      },
+      {
+        "label": "Event Name",
+        "type": "text",
+        "required": true,
+        "default": "new_stackoverflow_question"
+      },
+      {
+        "label": "Status",
+        "type": "text",
+        "required": true,
+        "default": "success"
+      },
+      {
+        "label": "Username",
+        "type": "text",
+        "required": false,
+        "default": "StackOverflow Bot"
+      }
+    ]
+  }
 }
+
 
 
   
