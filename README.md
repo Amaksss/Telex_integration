@@ -10,7 +10,7 @@ Real-time Collaboration: Enhances team communication by bringing relevant StackO
 The integration is defined by the following JSON structure:
 
 
-{
+`{
   "data": {
     "date": {
       "created_at": "2025-02-19",
@@ -79,7 +79,7 @@ The integration is defined by the following JSON structure:
       }
     ]
   }
-}
+}`
 
 
 # Setup
