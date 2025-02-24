@@ -6,7 +6,7 @@ Automated Updates: Periodically fetches and posts the latest StackOverflow quest
 Customizable Settings: Configure tags, update intervals, and webhook URLs to tailor the integration to your needs.
 Real-time Collaboration: Enhances team communication by bringing relevant StackOverflow discussions directly into Telex channels.
 
-#Integration JSON Specification
+# Integration JSON Specification
 The integration is defined by the following JSON structure:
 
 
