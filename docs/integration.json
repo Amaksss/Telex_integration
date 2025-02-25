@@ -7,7 +7,7 @@
     "descriptions": {
       "app_name": "StackOverflow Fetcher",
       "app_description": "Fetches recent StackOverflow questions based on specific tags and sends them to Telex.",
-      "app_url": "https://amaksss.github.io/Telex_integration/", 
+      "app_url": "https://telex-integration-ivz4.onrender.com/tick", 
       "app_logo": "https://i.imgur.com/lZqvffp.png",
       "background_color": "#f48024"
     },
